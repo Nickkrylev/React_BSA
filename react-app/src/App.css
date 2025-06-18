@@ -1,0 +1,19 @@
+/* 1. Установим height: 100% на html, body и корневой контейнер */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. App-контейнер — flex layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* 3. Main тянется на всё доступное пространство */
+main {
+  flex: 1;
+}
